@@ -51,6 +51,7 @@ import qualified Day6 as Day6
 import qualified Day7 as Day7
 import qualified Day8 as Day8
 import qualified Day9 as Day9
+import qualified Day10 as Day10
 
 opt_parser = info (helper <*> cmds)
   ( fullDesc
@@ -63,6 +64,7 @@ opt_parser = info (helper <*> cmds)
       <> command "day6" (info (pure Day6.main) idm)
       <> command "day7" (info (pure Day7.main) idm)
       <> command "day9" (info (pure Day9.main) idm)
+      <> command "day10" (info (pure Day10.main) idm)
       )
 
 main :: IO ()

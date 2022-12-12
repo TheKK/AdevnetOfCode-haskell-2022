@@ -42,9 +42,10 @@ executable aoc
       Day7
       Day8
       Day9
+      Day10
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
-    build-depends:    base ^>=4.15, async, retry, exceptions, mtl, stm, MemoTrie, containers, transformers, deepseq, streamly, fusion-plugin, text, parallel, split, optparse-applicative, vector, array
+    build-depends:    base ^>=4.15, async, retry, exceptions, mtl, stm, MemoTrie, containers, transformers, deepseq, streamly, fusion-plugin, text, parallel, split, optparse-applicative, vector, array, foldl
     hs-source-dirs:   app
     default-language: Haskell2010
