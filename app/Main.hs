@@ -11,11 +11,7 @@ module Main where
 import Control.Concurrent (threadDelay)
 import Control.Arrow ((***))
 import Control.DeepSeq (deepseq)
-import Control.Monad.IO.Class (MonadIO, liftIO)
-import Control.Monad.Reader.Class 
-import Control.Monad.Reader (runReaderT)
 import Control.Monad
-import Control.Concurrent.Async
 import Data.Foldable (foldl')
 import Data.Maybe (fromMaybe)
 import Data.Function
@@ -37,7 +33,6 @@ import qualified Streamly.Unicode.Stream as Uni
 import qualified Streamly.Internal.Unicode.Array.Char as Uni
 import qualified Streamly.Internal.FileSystem.FD as FD
 import qualified Streamly.Internal.Data.Array.Foreign.Type as Arr
-import Control.Parallel.Strategies
 
 import Data.Proxy
 
